@@ -11,5 +11,5 @@ Health Commission of Shaanxi Province, official website:
 http://sxwjw.shaanxi.gov.cn/col/col9/index.html
 
 Including:
-The Python script: a webpage crawler, acuqire the related reports. 
+A Python script: a webpage crawler, acuqire the related reports. 
 The txt files: everyday's raw reports (in chinese).
