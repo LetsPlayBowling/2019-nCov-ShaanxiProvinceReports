@@ -60,10 +60,11 @@ def getRelatedNewsUrls():
                             MainPageTxt,re.S)
     keyWord_1 = '陕西新增'
     keyWord_2 = '我省确认'
+    keyWord_3 = '陕西今日无新增'
     rootUrl = "http://sxwjw.shaanxi.gov.cn"
     file_new = open('卫健要闻_items_'+ strTodayDate + '.txt','w')
     for tempStr in MainPageItems:
-        if (keyWord_1 in tempStr) | (keyWord_2 in tempStr):
+        if (keyWord_1 in tempStr)|(keyWord_2 in tempStr)|(keyWord_3 in tempStr):
             tempDate = re.search('(</a><span>)(.*)(</span></li>)',
                             tempStr, re.I).group(2)
             tempTitle = re.search('(target="_blank">)(.*)(</a><span>)',
